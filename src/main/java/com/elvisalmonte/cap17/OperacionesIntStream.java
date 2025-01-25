@@ -14,6 +14,16 @@ public class OperacionesIntStream {
 
         System.out.println();
 
+        System.out.printf("%nCuenta: %d", IntStream.of(valores)
+                .count());
+        System.out.printf("%nMin: %d%n", IntStream.of(valores)
+                .min().getAsInt());
+
+        System.out.println(IntStream.of(valores)
+                .summaryStatistics());
+
+
+
 
     }
 
